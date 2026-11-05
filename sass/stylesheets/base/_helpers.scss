@@ -1,0 +1,14 @@
+@use '../abstracts';
+
+// -----------------------------------------------------------------------------
+// This file contains CSS helper classes.
+// -----------------------------------------------------------------------------
+.container {
+  max-width: abstracts.$max-width; /* 1 */
+  margin-left: auto; /* 2 */
+  margin-right: auto; /* 2 */
+  padding-left: 16px; /* 3 */
+  padding-right: 16px; /* 3 */
+  width: 100%; /* 1 */
+}
+

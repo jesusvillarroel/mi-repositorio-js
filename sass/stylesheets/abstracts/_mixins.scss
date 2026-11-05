@@ -1,0 +1,17 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+@use 'variables' as vp;
+// Mixin inteligente para Media Queries (lee el mapa de variables de breakpoints)
+@mixin respond-to($size) {
+  @if map-has-key(vp.$breakpoints, $size) {
+    $value: map-get(vp.$breakpoints, $size);
+    
+    @media (max-width: #{$value}) {
+      @content;
+    }
+  } @else {
+    @warn "¡Opps! El tamaño '#{$size}' no existe en el mapa de breakpoints.";
+  }
+}
+
