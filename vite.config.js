@@ -8,7 +8,8 @@ export default defineConfig({
       input: {
         
         main: resolve(rootDir, 'index.html'),      
-        ejercicio1: resolve(rootDir, 'js_ejercicio_1.html') 
+        ejercicio1: resolve(rootDir, 'js_ejercicio1.html'), 
+        ejercicio2: resolve(rootDir, 'js_ejercicio2.html') 
       }
     }
   }
