@@ -1,0 +1,84 @@
+// Variables locales del módulo 
+$color-bg-item: #ffffff;
+$color-border: #e2e8f0;
+$color-text: #1e293b;
+$color-danger: #ef4444;
+$color-danger-hover: #dc2626;
+$shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.1);
+$shadow-md: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+// Contenedor del título dinámico
+#titulo-lista {
+  font-size: 1.25rem;
+  color: $color-text;
+  margin: 0;
+  font-weight: 600;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 0.5rem;
+ &.has-content {
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom-color: $color-border;
+  }
+}
+
+// Contenedor principal de la lista (<ul>)
+#lista-contenedor {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem; // Separa los ítems elegantemente sin usar margin-bottom
+  max-width: 500px; // Evita que la lista se estire demasiado en pantallas anchas
+
+  // Estilo para cada ítem (<li>)
+  li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: $color-bg-item;
+    padding: 0.75rem 1rem;
+    border-radius: 8px;
+    border: 1px solid $color-border;
+    box-shadow: $shadow-sm;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+
+    // Efecto "Hover" al pasar el mouse por encima del ítem
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: $shadow-md;
+    }
+
+    // El texto dentro del ítem
+    span {
+      color: $color-text;
+      font-size: 1rem;
+      word-break: break-word; // Evita que textos muy largos rompan el diseño
+      padding-right: 1rem;
+    }
+
+    // El botón de eliminar de cada fila
+    .btn-eliminar {
+      background: none;
+      border: none;
+      font-size: 1.1rem;
+      cursor: pointer;
+      padding: 0.4rem;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background-color 0.2s ease, transform 0.1s ease;
+
+      &:hover {
+        background-color: rgba($color-danger, 0.1); // Fondo rojo sutil
+        transform: scale(1.1);
+      }
+
+      &:active {
+        transform: scale(0.95);
+      }
+    }
+  }
+}

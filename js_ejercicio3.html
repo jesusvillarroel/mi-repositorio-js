@@ -3,15 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ejercicio 3 - Lista Dinamica</title>
+    <title>Ejercicio 3 - Lista Dinámica</title>
 </head>
 <body>
     <a href="index.html">⬅️ Volver al menú</a>
 
     <!-- 1. DESCRIPCIÓN DEL EJERCICIO -->
     <section class="descripcion">
-        <h2>Descripción del Ejercicio 3: Contador Interactivo</h2>
-        <p>El objetivo es crear un contador que incremente su valor en 1 cada vez que el usuario presione el botón, utilizando el manejo básico del DOM y eventos de clic.</p>
+        <h2>Descripción del Ejercicio 3: Lista Dinámica</h2>
+        <p>Crea una página con un campo de texto, un botón que diga "Agregar", y una lista vacía debajo. Al hacer clic, el texto se añade a la lista con un botón para eliminarlo.</p>
     </section>
 
     <hr>
@@ -19,8 +19,17 @@
     <!-- 2. LO RESUELTO (La aplicación funcionando) -->
     <section class="resolucion">
         <h2>Resolución</h2>
-        <h1 id="contador-valor">0</h1>
-        <button id="btn-incrementar">Incrementar</button>
+        
+        <!-- Usar un <form> es la mejor práctica semántica para capturar inputs -->
+        <form id="lista-form" autocomplete="off">
+            <label for="input-tarea">Nueva tarea:</label>
+            <input type="text" id="tarea" name="tarea" placeholder="Escribe algo aquí..." required>
+            <button type="submit" id="btn-agregar">Agregar</button>
+        </form>
+
+        <!-- Lista vacía donde JavaScript meterá los elementos -->
+         <h3 id="titulo-lista"></h3>
+        <ul id="lista-contenedor"></ul>
     </section>
 
     <script type="module" src="/js/main.js"></script>
