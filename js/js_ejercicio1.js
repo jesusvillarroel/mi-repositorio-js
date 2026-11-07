@@ -4,7 +4,7 @@ import { generarColorAleatorio } from './utils/color.js';
 const miBoton=document.querySelector('#btn-cambiar');
 
 //luego lo pongo a la escucha del evento click
-miBoton.addEventListener('click',()=>{
+miBoton?.addEventListener('click',()=>{
     const nuevoColor=generarColorAleatorio();
     document.body.style.backgroundColor=nuevoColor;
 });
