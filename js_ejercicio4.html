@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 4 - Filtro de Búsqueda en Tiempo Real</title>
+</head>
+<body>
+    <a href="index.html">⬅️ Volver al menú</a>
+
+    <!-- 1. DESCRIPCIÓN DEL EJERCICIO -->
+    <section class="descripcion">
+        <h2>Descripción del Ejercicio 4: Filtro de Búsqueda en Tiempo Real</h2>
+        <p>Crea una página con un campo de texto y una lista predefinida de elementos.</p>
+    </section>
+
+    <hr>
+
+    <!-- 2. LO RESUELTO (La aplicación funcionando) -->
+    <section class="resolucion">
+        <h2>Resolución</h2>
+        
+        <!-- Usar un <form> es la mejor práctica semántica para capturar inputs -->
+        <form id="form" autocomplete="off">
+            <label for="buscador">Buscar un elemento:</label>
+            <input type="search" id="buscador" name="buscador" placeholder="Escribe el elemento a buscar" >
+        </form>
+        <ul id="lista-elementos" class="search-list"></ul>
+    </section>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
