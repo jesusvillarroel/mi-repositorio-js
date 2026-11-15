@@ -11,7 +11,8 @@ export default defineConfig({
         ejercicio1: resolve(import.meta.dirname, 'js_ejercicio1.html'), 
         ejercicio2: resolve(import.meta.dirname, 'js_ejercicio2.html'),
         ejercicio3: resolve(import.meta.dirname, 'js_ejercicio3.html'),
-        ejercicio4: resolve(import.meta.dirname, 'js_ejercicio4.html')  
+        ejercicio4: resolve(import.meta.dirname, 'js_ejercicio4.html'),
+        calculadora: resolve(import.meta.dirname, 'calculadora.html')   
       }
     }
   }

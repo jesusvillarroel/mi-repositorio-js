@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 5 - Calculadora Básica</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">⬅️ Volver al menú</a>
+        </nav>
+    </header>
+
+    <main id="app-calculadora">
+        <!-- 1. DESCRIPCIÓN DEL EJERCICIO -->
+        <section class="descripcion">
+            <h1>Ejercicio 5: Calculadora Básica</h1>
+            <p>Crea una página con dos campos de entrada de números y cuatro botones: "Sumar", "Restar", "Multiplicar", y "Dividir".</p>
+        </section>
+
+        <hr>
+
+        <!-- 2. LO RESUELTO (La aplicación funcionando) -->
+        <section class="resolucion">
+            <h2>Resolución</h2>
+            
+            <div class="campo">
+                <label for="primerNumero">Ingrese el primer número:</label>
+                <input type="number" step="any" id="primerNumero" name="primerNumero" placeholder="Ej. 10.5">
+            </div>
+
+            <div class="campo">
+                <label for="segundoNumero">Ingrese el segundo número:</label>
+                <input type="number" step="any" id="segundoNumero" name="segundoNumero" placeholder="Ej. 5">
+            </div>
+
+            <div class="acciones">
+                <button type="button" data-operacion="sumar">Sumar</button>
+                <button type="button" data-operacion="restar">Restar</button>
+                <button type="button" data-operacion="multiplicar">Multiplicar</button>
+                <button type="button" data-operacion="dividir">Dividir</button>
+            </div>
+
+            <output id="resultado" for="primerNumero segundoNumero" aria-live="polite">0</output>
+        </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
