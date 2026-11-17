@@ -1,0 +1,109 @@
+// components/_temporizador.scss
+
+#app-temporizador {
+  max-width: 450px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  font-family: system-ui, -apple-system, sans-serif;
+
+  .descripcion {
+    margin-bottom: 1.5rem;
+
+    h1 {
+      font-size: 1.4rem;
+      color: #1e293b;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      font-size: 0.95rem;
+      color: #64748b;
+      line-height: 1.5;
+    }
+  }
+
+  hr {
+    border: none;
+    border-top: 1px solid #e2e8f0;
+    margin: 1.5rem 0;
+  }
+
+  .resolucion {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+
+    h2 {
+      font-size: 1.1rem;
+      color: #334155;
+      margin-bottom: -0.5rem;
+    }
+
+    // Pantalla del reloj digital
+    #pantalla-tiempo {
+      display: block;
+      padding: 1.5rem 1rem;
+      font-size: 2.75rem;
+      font-weight: 700;
+      text-align: center;
+      letter-spacing: 0.08em;
+      font-variant-numeric: tabular-nums; // Evita que los números vibren al cambiar
+      color: #0f172a;
+      background-color: #f8fafc;
+      border: 2px solid #e2e8f0;
+      border-radius: 10px;
+    }
+
+    // Fila de 3 botones
+    .acciones {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 0.75rem;
+    }
+
+    button {
+      padding: 0.75rem 0.5rem;
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #ffffff;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.2s ease, transform 0.1s ease, opacity 0.2s ease;
+
+      &:active:not(:disabled) {
+        transform: scale(0.97);
+      }
+
+      // Estado deshabilitado controlado desde ui.js
+      &:disabled {
+        opacity: 0.45;
+        cursor: not-allowed;
+      }
+
+      &[data-accion="iniciar"] {
+        background-color: #16a34a;
+        &:hover:not(:disabled) {
+          background-color: #15803d;
+        }
+      }
+
+      &[data-accion="pausar"] {
+        background-color: #d97706;
+        &:hover:not(:disabled) {
+          background-color: #b45309;
+        }
+      }
+
+      &[data-accion="reiniciar"] {
+        background-color: #64748b;
+        &:hover:not(:disabled) {
+          background-color: #475569;
+        }
+      }
+    }
+  }
+}

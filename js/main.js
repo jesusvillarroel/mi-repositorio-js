@@ -5,3 +5,5 @@ import '/js/js_ejercicio3.js';
 import '/js/js_ejercicio4.js';
 import { iniciarCalculadora } from './calculadora/index.js';
 iniciarCalculadora();
+import { iniciarTemporizador } from './temporizador/index.js';
+iniciarTemporizador();

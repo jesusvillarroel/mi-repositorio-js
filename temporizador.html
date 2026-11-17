@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 6 - Temporizador</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">⬅️ Volver al menú</a>
+        </nav>
+    </header>
+
+    <main id="app-temporizador">
+        <!-- 1. DESCRIPCIÓN DEL EJERCICIO -->
+        <section class="descripcion">
+            <h1>Ejercicio 6: Temporizador con Inicio, Pausa y Reinicio</h1>
+            <p>Crea una página con un temporizador que comience en 00:00:00. Incluye tres botones: “Iniciar”, “Pausar”
+y “Reiniciar”.</p>
+        </section>
+
+        <hr>
+
+        <!-- 2. LO RESUELTO (La aplicación funcionando) -->
+        <section class="resolucion">
+            <h2>Resolución</h2>
+            
+            <time id="pantalla-tiempo" role="timer" aria-live="off">00:00:00</time>
+            <div class="acciones">
+                <button type="button" data-accion="iniciar">Iniciar</button>
+                <button type="button" data-accion="pausar">Pausar</button>
+                <button type="button" data-accion="reiniciar">Reiniciar</button>
+            </div>
+       </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
