@@ -1,0 +1,19 @@
+#app-generador {
+  .input {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .accion button {
+    width: 100%;
+  }
+
+  #resultado {
+    font-family: ui-monospace, monospace;
+    font-size: 1.25rem;
+    text-align: center;
+    word-break: break-all;
+    user-select: all;
+  }
+}

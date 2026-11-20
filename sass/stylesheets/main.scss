@@ -16,12 +16,16 @@
 
 // 4. Components
 @use 'components/button';
-@use 'components/calculadora';
-@use 'components/temporizador';
+@use 'components/card';
+
 
 // 5. Pages
 @use 'pages/home';
 @use 'pages/ejercicio3';
+@use 'pages/calculadora';
+@use 'pages/temporizador';
+@use 'pages/generador';
+
 
 // 6. Themes
 @use 'themes/default';

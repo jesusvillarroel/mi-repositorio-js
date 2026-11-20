@@ -7,3 +7,5 @@ import { iniciarCalculadora } from './calculadora/index.js';
 iniciarCalculadora();
 import { iniciarTemporizador } from './temporizador/index.js';
 iniciarTemporizador();
+import { iniciarGenerador } from './generador/index.js';
+iniciarGenerador();

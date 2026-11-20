@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 7 - Generador de Contraseñas Aleatorias</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">⬅️ Volver al menú</a>
+        </nav>
+    </header>
+    
+
+    
+ <main id="app-generador" class="ejercicio-card">
+        <!-- 1. DESCRIPCIÓN DEL EJERCICIO -->
+    <section class="descripcion">
+        <h1>Descripción del Ejercicio 7: Generador de Contraseñas Aleatorias</h2>
+        <p>Crea una página con un campo de entrada para especificar la longitud de una contraseña y un botón que
+diga “Generar contraseña”</p>
+    </section>   
+
+        <hr>
+
+        <!-- 2. LO RESUELTO (La aplicación funcionando) -->
+    <section class="resolucion">
+        <h2>Resolución</h2>
+        
+        <div class="input">
+            <label for="longitud">Ingrese la longitud de tu contraseña:</label>
+            <input type="number"  min="4" id="longitud" name="longitud" placeholder="Ej 12">
+        </div>
+        <div class="accion">
+            <button type="button" data-generar="generar">Generar Contraseña</button>
+        </div>
+        <output id="resultado" for="longitud" aria-live="polite"></output>
+    </section>
+</main>
+<script type="module" src="/js/main.js"></script>
+</body>
+</html>
