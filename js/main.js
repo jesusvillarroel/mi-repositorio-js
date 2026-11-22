@@ -9,3 +9,5 @@ import { iniciarTemporizador } from './temporizador/index.js';
 iniciarTemporizador();
 import { iniciarGenerador } from './generador/index.js';
 iniciarGenerador();
+import { iniciarContadorPalabras } from './contador-palabras/index.js';
+iniciarContadorPalabras();

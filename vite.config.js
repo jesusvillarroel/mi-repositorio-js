@@ -14,7 +14,8 @@ export default defineConfig({
         ejercicio4: resolve(import.meta.dirname, 'js_ejercicio4.html'),
         calculadora: resolve(import.meta.dirname, 'calculadora.html'),
         temporizador: resolve(import.meta.dirname, 'temporizador.html'),
-        generador: resolve(import.meta.dirname, 'generador.html')     
+        generador: resolve(import.meta.dirname, 'generador.html'),
+        contador: resolve(import.meta.dirname, 'contador-palabras.html')     
       }
     }
   }

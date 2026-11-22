@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 8 -  Contador de Palabras y Caracteres</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">⬅️ Volver al menú</a>
+        </nav>
+    </header>
+
+    <main id="app-contador-palabras" class="ejercicio-card">
+        <!-- 1. DESCRIPCIÓN DEL EJERCICIO -->
+        <section class="descripcion">
+            <h1>Ejercicio 8:  Contador de Palabras y Caracteres</h1>
+            <p>Crea una página con un campo de texto donde el usuario pueda escribir un párrafo.</p>
+        </section>
+
+        <hr>
+
+        <!-- 2. LO RESUELTO (La aplicación funcionando) -->
+        <section class="resolucion">
+            <h2>Resolución</h2>
+            
+            <div class="parrafo">
+                <label for="texto-entrada">Escribe aqui tu texto</label>
+                <textarea name="texto-entrada" id="texto-entrada" rows="5" placeholder="Escribe o pega aqui tu parrafo "></textarea>
+            </div>
+            
+            <div class="estadisticas">
+                <p>Palabras: <output id="contador-palabras" aria-live="polite" for="texto-entrada">0</output></p>
+                <p>Caracteres: <output id="contador-caracteres" aria-live="polite" for="texto-entrada">0</output></p>
+            </div>
+        </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>
