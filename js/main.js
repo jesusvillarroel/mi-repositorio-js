@@ -11,3 +11,5 @@ import { iniciarGenerador } from './generador/index.js';
 iniciarGenerador();
 import { iniciarContadorPalabras } from './contador-palabras/index.js';
 iniciarContadorPalabras();
+import { iniciarTareas } from './tareas/index.js';
+iniciarTareas();

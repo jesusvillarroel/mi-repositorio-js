@@ -1,0 +1,78 @@
+
+#app-tareas {
+  #form-tarea {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.65rem;
+
+    label {
+      width: 100%;
+    }
+
+    input[type="text"] {
+      flex: 1;
+      min-width: 200px;
+    }
+  }
+
+  #titulo-lista {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #64748b;
+    margin-top: 0.5rem;
+  }
+
+  .lista-tareas {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      padding: 0.75rem 1rem;
+      background-color: #f8fafc;
+      border: 1px solid #e2e8f0;
+      border-radius: 8px;
+      transition: background-color 0.2s ease, opacity 0.2s ease;
+
+      input[type="checkbox"] {
+        width: 1.15rem;
+        height: 1.15rem;
+        cursor: pointer;
+        accent-color: #3b82f6;
+      }
+
+      span {
+        flex: 1;
+        font-size: 0.95rem;
+        color: #1e293b;
+        word-break: break-word;
+      }
+
+      // Estado visual cuando la tarea está marcada como completada
+      &.completada {
+        background-color: #f1f5f9;
+        opacity: 0.75;
+
+        span {
+          text-decoration: line-through;
+          color: #94a3b8;
+        }
+      }
+    }
+  }
+
+  #btn-limpiar {
+    background-color: #ef4444;
+    margin-top: 0.5rem;
+
+    &:hover:not(:disabled) {
+      background-color: #dc2626;
+    }
+  }
+}

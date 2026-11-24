@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 9 - Lista de Tareas con LocalStorage</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">⬅️ Volver al menú</a>
+        </nav>
+    </header>
+
+    <main id="app-tareas" class="ejercicio-card">
+        <!-- 1. DESCRIPCIÓN DEL EJERCICIO -->
+        <section class="descripcion">
+            <h1>Ejercicio 9: Lista de Tareas con LocalStorage</h1>
+            <p>Crea una aplicación de lista de tareas. <br>
+• Cada tarea debe incluir un texto y un checkbox para marcarla como completada. <br>
+• Las tareas se deben guardar en localStorage para que persistan incluso si la página se recarga. <br>
+• Debe incluir un botón para limpiar todas las tareas completadas </p>
+        </section>
+
+        <hr>
+
+        <!-- 2. LO RESUELTO (La aplicación funcionando) -->
+        <section class="resolucion">
+            <h2>Resolución</h2>
+            <form id="form-tarea" autocomplete="off">
+                <label for="nueva-tarea">Nueva tarea:</label>
+                <input type="text" id="nueva-tarea" name="nueva-tarea" placeholder="Ej. Estudiar Typescript" required>
+                <button type="submit" id="btn-agregar">Agregar</button>
+            </form>
+    
+            <!-- Lista vacía donde JavaScript meterá los elementos -->
+             <h3 id="titulo-lista"></h3>
+            <ul id="lista-tareas" class="lista-tareas"></ul>
+            <button type="button" id="btn-limpiar"> Limpiar Completadas</button>
+        </section>
+    </main>
+
+    <script type="module" src="/js/main.js"></script>
+</body>
+</html>

@@ -15,7 +15,8 @@ export default defineConfig({
         calculadora: resolve(import.meta.dirname, 'calculadora.html'),
         temporizador: resolve(import.meta.dirname, 'temporizador.html'),
         generador: resolve(import.meta.dirname, 'generador.html'),
-        contador: resolve(import.meta.dirname, 'contador-palabras.html')     
+        contador: resolve(import.meta.dirname, 'contador-palabras.html'),
+        tareas: resolve(import.meta.dirname,'tareas.html')     
       }
     }
   }
